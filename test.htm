@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<HTML lang="ru">
+<HEAD>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <TITLE>test</TITLE>
+</HEAD>
+<style type="text/css">
+    .menu {
+        display: flex;
+        width: 1920px;
+        height: 80px;
+        box-sizing: border-box;
+        background: #397DFF;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        margin:0 auto;
+    }
+    .link {
+        text-decoration: none;
+        color: white;
+    }
+    .head {
+        display: flex;
+        height: 960px;
+        width: 1920px;
+        flex-direction: column;
+        background: #397DFF;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .imag {
+        width: 1920px;
+        height: 960px;
+        background-size: cover;
+        position: absolute;
+        opacity: 0.4;
+        background-image: url(https://www.olympex.kz/wp-content/uploads/inatba-1920x960.jpg);
+        pointer-events: none;
+        z-index: 0;
+        margin: 0 auto;
+    }
+    .headText1 {
+        color:white; 
+        position:relative;
+        z-index: 2; 
+        font-size: 60px; 
+        width:850px;
+        height:100px;
+    }
+    .headText2 {
+        color:white; 
+        position:relative;
+        z-index: 2; 
+        font-size: 20px; 
+        height:100px
+    }
+    .emptyButton {
+        font-size: 20px;
+        width: 120px;
+        height: 60px;
+        position: relative;
+        z-index: 2;
+    }
+    .body {
+        display: flex;
+        position: relative;
+        width: 1216px;
+        height: 281px;
+        flex-direction: row;
+        margin: 0 auto;
+        align-items:end;
+        font-size: 15.5px;
+        gap:25px;
+    }
+    .bodeHead {
+        width: 100%; 
+        position:absolute; 
+        top: 50px;
+        text-align:center;
+        font-size: 40px;
+    }
+    .bodyText {
+        font-size: 17px;
+    }
+    .block {
+        display: flex;
+        width: 1216px;
+        height: 448px;
+        margin: 0 auto;
+        flex-direction:row;
+        box-sizing:border-box;
+        align-items:flex-start;
+        justify-content:center
+    }
+    .blockText{
+        flex-direction:column;
+    }
+    .blockText1 {
+        font-size: 40px;
+    }
+    .blockText2 {
+        font-size:20px
+    }
+    .sliderBox {
+        display: flex;
+        width: 1920px;
+        height: 564px;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #ABCAE6;
+    }
+    .slider-container {
+        position: relative;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sliderText {
+        font-size:40px; 
+        margin:0;
+    }
+    .radioSlider1 {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        top: 5px;
+    }
+    .radioSlider2 {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+    }
+    .radioSlider3 {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+    }
+    .radioSlider4 {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+    }
+    .radioSlider5 {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+    }
+    .kot {
+        width:auto; 
+        height:425px;
+        position:relative;
+    }
+    .prev-button {
+        position:absolute;
+        top: 50%;
+        left:-40px;
+    }
+    .next-button {
+        position: absolute;
+        top: 50%;
+        right:-40px;
+    }
+    .foot {
+        width: 1920px;
+        height: 88px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+</style>
+<nav>
+    <div class='menu'>
+        <a href="#body" class="link"> Как это работает</a>
+        <a href="#3block" class="link">3-й блок</a>
+        <a href="#section" class="link">Вопросы и ответы</a>
+        <a href="#floor" class="link">Форма</a>
+    </div>
+</nav>
+<header>
+    <div class="head">
+        <div class="imag"></div>
+        <h1 class="headText1">Говорят, никогда не поздно сменить профессию</h1>
+        <h3 class="headText2">Сделай тестовое задание у тебя получится</h3>
+        <button class="emptyButton" onclick=window.open("https://www.google.com")>Тык!</button>
+    </div>
+</header>
+<body>
+    <div class="body" id="body">
+        <h1 class="bodeHead">Как это работает</h1>
+        <span><img src="https://i.pinimg.com/736x/8c/7c/03/8c7c03eb27ac525150d67faa3a660b5f.jpg" alt="очки" width="80px" height="80px" /><br><b class="bodyText">Прочитай задание внимательно</b><br>Думаю у тебя не займет это больше двух-трех минут</span>
+        <span><img src="https://kartinkof.club/uploads/posts/2022-04/1650000206_8-kartinkof-club-p-kartinki-mislitel-prikolnie-8.jpg" alt="мыслитель" width="80px" height="80px" /><br><b class="bodyText">Изучи весь макет заранее</b><br>Подумай как это будет работать на разных разрешениях и при скролле</span>
+        <span><img src="https://img.freepik.com/free-vector/discipline-abstract-concept-vector-illustration-personal-quality-disciplined-employee-diligence-self-discipline-training-behavior-regulation-obey-the-rules-control-habit-abstract-metaphor_335657-6210.jpg" alt="усердие" width="80px" height="80px" /><br> <b class="bodyText">Сделай хорошо</b><br>Чтобы мы могли тебе доверить подобные задачи в будущем</span>
+        <span><img src="https://eksmo.ru/upload/iblock/d2b/1_min.jpg" alt="богатство" width="80px" height="80px" /><br><b class="bodyText">Получи предложение</b><br>Ну тут всё просто, не я придумал, нодумаю так и будет)</span>
+    </div>
+    <div class="block" id="3block">
+        <div class="blockText">
+            <p class="blockText1"><b>Круто, ты дошёл до третьего блока</b></p>
+            <p class="blockText2">63% опрошенных пользовались кредитпми из-за того, что не могли покрыть непредвиденные расходы свыше 15 000 Р. </p>
+            <p class="blockText2">Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах. </p>
+        </div>
+        <img src="https://img.freepik.com/free-vector/successful-business-man-holding-a-trophy_1150-35042.jpg?w=2000" alt="Незагруженый jpg" width="595" height="396">
+    </div>
+</body>
+<section class="sliderBox" id="section">
+    <h2 class="sliderText">Отзывы</h2>
+    <h3>Тут должны быть отзывы но их нет, поэтому вот вам котики)</h3>
+    <div class="slider-container">
+        <div class="back"></div>
+        <div class="slider">
+            <img src="https://i.postimg.cc/nhsTGkLQ/1.png" alt="Белый пушистый кот" class="kot">
+            <img src="https://i.postimg.cc/cLVh9nKk/2.png" alt="Рыжий пушистый кот в джинсах" class="kot">
+            <img src="https://i.postimg.cc/4NxWmZkP/3.png" alt="Бело-рыжий пушистый кот" class="kot">
+            <img src="https://i.postimg.cc/FFZPrzq1/8.png" alt="Золотистый пушистый кот" class="kot">
+            <img src="https://i.postimg.cc/jd3Zf9Rb/7.png" alt="Золотистый пушистый кот" class="kot">
+        </div>
+        <div class="controls">
+        <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+        <input type="radio" id="f1" value="foto1" name="slaider" class="radioSlider1" aria-label="выбор слайда1" checked>
+        <label for="f1"></label>
+        <input type="radio" id="f2" value="foto2" name="slaider" class="radioSlider2" aria-label="выбор слайда2">
+        <label for="f2"></label>
+        <input type="radio" id="f3" value="foto3" name="slaider" class="radioSlider3" aria-label="выбор слайда3">
+        <label for="f3"></label>
+        <input type="radio" id="f4" value="foto4" name="slaider" class="radioSlider4" aria-label="выбор слайда4">
+        <label for="f4"></label>
+        <input type="radio" id="f5" value="foto5" name="slaider" class="radioSlider5" aria-label="выбор слайда5">
+        <label for="f5"></label>
+        <button class="next-button" aria-label="Посмотреть следующий слайд">&gt;</button>
+        </div>
+    </div>
+</section>
+<footer class="foot" id="floor">
+    <p>@ 2021 Лаборатория интернет.</p>
+</footer>
+</HTML>
+
+
+
+<script>
+    const slider = document.querySelector('.slider');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    const slides = Array.from(slider.querySelectorAll('img'));
+    const slideCount = slides.length;
+    let slideIndex = 0;
+
+    const button1 = document.querySelector('.radioSlider1')
+    const button2 = document.querySelector('.radioSlider2')
+    const button3 = document.querySelector('.radioSlider3')
+    const button4 = document.querySelector('.radioSlider4')
+    const button5 = document.querySelector('.radioSlider5')
+
+    const radiobutton1 = document.querySelector('#f1')
+    const radiobutton2 = document.querySelector("#f2")
+    const radiobutton3 = document.querySelector("#f3")
+    const radiobutton4 = document.querySelector("#f4")
+    const radiobutton5 = document.querySelector("#f5")
+
+    prevButton.addEventListener('click', showPreviousSlide);
+    nextButton.addEventListener('click', showNextSlide);
+
+    function showPreviousSlide() {
+        slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+        updateSlider();
+        radio()
+    }
+
+    function showNextSlide() {
+        slideIndex = (slideIndex + 1) % slideCount;
+        updateSlider();
+        radio();
+    }
+
+    button1.addEventListener('click', showFirst);
+    button2.addEventListener('click', showSecond);
+    button3.addEventListener('click', showThird);
+    button4.addEventListener('click', showFourth);
+    button5.addEventListener('click', showFifth);
+
+    function showFirst() {
+        slideIndex = 0;
+        updateSlider();
+    }
+
+    function showSecond() {
+        slideIndex = 1;
+        updateSlider();
+    }
+
+    function showThird() {
+        slideIndex = 2;
+        updateSlider();
+    }
+    function showFourth() {
+        slideIndex = 3;
+        updateSlider();
+    }
+    function showFifth() {
+        slideIndex = 4;
+        updateSlider();
+    }
+
+    function radio() {
+        if (slideIndex === 0) {
+            radiobutton1.checked = true;
+        }
+        if (slideIndex === 1) {
+            radiobutton2.checked = true;
+        }
+        if (slideIndex === 2) {
+            radiobutton3.checked = true;
+        }
+        if (slideIndex === 3) {
+            radiobutton4.checked = true;
+        }
+        if (slideIndex === 4) {
+            radiobutton5.checked = true;
+        }
+    }
+
+    function updateSlider() {
+        slides.forEach((slide, index) => {
+            if (index === slideIndex) {
+                slide.style.display = 'block';
+            } else {
+                slide.style.display = 'none';
+            }
+        });
+    }
+   
+    
+
+    updateSlider();
+</script>
+
